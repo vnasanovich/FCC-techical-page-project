@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header class="header-nav">
+<div class="logo-container">
+            <header class="nav-header">Learning React</header>
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="-10.5 -9.45 21 18.9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-4 mb-3 text-link dark:text-link-dark w-24 lg:w-28 self-center text-sm me-0 flex origin-center transition-all ease-in-out"
+            >
+              <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
+              <g stroke="currentColor" stroke-width="1" fill="none">
+                <ellipse rx="10" ry="4.5"></ellipse>
+                <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+                <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+              </g>
+            </svg>
+          </div>
+<div class="menu">
+<nav id="navbar">
+          <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li>
+              <a href="#Creating_components" class="nav-link"
+                >Creating components</a
+              >
+            </li>
+            <li><a href="#Writing_JSX" class="nav-link">Writing JSX</a></li>
+            <li><a href="#Adding_styles" class="nav-link">Adding styles</a></li>
+            <li>
+              <a href="#Displaying_data" class="nav-link">Displaying data</a>
+            </li>
+              <li>
+              <a href="#Reference" class="nav-link">Reference</a>
+            </li>
+          </ul>
+            <button class="nav-close">
+          <span class="nav-close-line"></span>
+          <span class="nav-close-line"></span>
+        
+            </button>
+</nav>
+     <button class="burger">
+          <span class="burger_line burger_line_first"></span>
+          <span class="burger_line burger_line_second"></span>
+          <span class="burger_line burger_line_third"></span>
+     </button>
+</div>
+    </header>
+    
+       
+    
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>
+            React has been designed from the start for gradual adoption, and you
+            can use as little or as much React as you need. Whether you want to
+            get a taste of React, add some interactivity to a simple HTML page,
+            or start a complex React-powered app, the links in this section will
+            help you get started.
+          </p>
+          <h3> Advantages of using React:</h3>
+          <ul class="intro-list">
+            <li>Simplified Scripting</li>
+                <li>Component-based architecture</li>
+                    <li>Faster rendering</li>
+                        <li>Stable Code Structure</li>
+                            <li>Handy developer tools</li>
+            </ul>
+          <p>
+            If you are interested in playing around with React, you can use an
+            online code playground like
+            <a href="https://codepen.io/" target="_blank"> CodePen</a>.
+          </p>
+        </section>
+        <section class="main-section" id="Creating_components">
+          <header>Creating components</header>
+          <p>React apps are made out of components.</p>
+          <p>
+            A component is a piece of the UI (user interface) that has its own
+            logic and appearance. A component can be as small as a button, or as
+            large as an entire page. React components are JavaScript functions
+            that return markup:
+          </p>
+          <code
+            >function MyButton() { <br />
+            return ( <br />
+            &lt;button&gt;I'm a button&lt;/button&gt; <br />
+            ); <br />
+            }</code
+          >
+        </section>
+        <section class="main-section" id="Writing_JSX">
+          <header>Writing JSX</header>
+          <p>
+            The markup syntax you have seen above is called JSX. It is optional,
+            but most React projects use JSX for its convenience. All of the
+            tools we recommend for local development support JSX out of the box.
+          </p>
+          <p>
+            JSX is stricter than HTML. For example, your component also can not
+            return multiple JSX tags. You have to wrap them into a shared parent
+            or an empty wrapper:
+          </p>
+          <code
+            >function AboutPage() { <br />
+            return ( <br>&lt;&gt; <br />
+            &lt;h1&gt;About&lt;/h1&gt; <br />
+            &lt;p&gt;Hello there.&lt;/p&gt; <br />&lt;/&gt;<br> );}
+          </code>
+        </section>
+        <section class="main-section" id="Adding_styles">
+          <header>Adding styles</header>
+          <p>
+            In React, you specify a CSS class with className. It works the same
+            way as the HTML class attribute
+          </p>
+          <code> &lt;img className="avatar" /&gt;</code>
+          <p>Then you write the CSS rules for it in a separate CSS file:</p>
+          <code
+            >.avatar { <br />
+            border-radius: 50%; <br />
+            }</code
+          >
+        </section>
+        <section class="main-section" id="Displaying_data">
+          <header>Displaying data</header>
+          <p>
+            JSX lets you put markup into JavaScript. Curly braces let you
+            “escape back” into JavaScript so that you can embed some variable
+            from your code and display it to the user.
+          </p>
+          <p>For example, this will display user.name:</p>
+          <code
+            >return ( <br />
+            &lt;h1&gt; <br />
+            {user.name} <br />
+            &lt;/h1&gt; <br />
+            );</code
+          >
+        </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+        <ul>
+          <li>All the documentation in this page is taken from <a href="https://react.dev/" target="_blank">React</a>. </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
